@@ -8,8 +8,8 @@ function ToastShelf({ toasts }) {
     <ol className={styles.wrapper}>
       {toasts.map((toast) => {
         return (
-          <li key={toast.message} className={styles.toastWrapper}>
-            <Toast variant={toast.variant} message={toast.message} />
+          <li key={toast.id} className={styles.toastWrapper}>
+            <Toast id={toast.id} variant={toast.variant} message={toast.message} />
           </li>
         );
       })}
